@@ -49,7 +49,7 @@ img {
     padding-right:40px;
     padding-left: 40px;
     margin: 0 auto;
-    /* outline: 1px solid tomato; */
+    outline: 1px solid tomato;
   }
 
   @media screen and (max-width: 479px) {
@@ -96,14 +96,10 @@ img {
     .header-container {
       padding-top: 32px;
       padding-bottom: 32px;
-      display: flex;
-      justify-content: center;
     }
   }
   @media screen and (min-width:1280px) {
     .header-container {
-      display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-top: 16px;
     padding-bottom: 16px; 
@@ -115,32 +111,21 @@ img {
 
 
   .header-logo{
-    margin-right: 20px;
+    margin-right: auto;
     background-image: url(./images/icons/logo-png.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 51px;
+    max-width: 51px;
+    min-width: 51px;
     height: 51px;
   }
 
-  @media screen and (min-width:768px) {
-    .header-logo {
-      margin-right: 200px;
-    }
-  }
-  @media screen and (min-width:1280px) {
-    .header-logo {
-      margin-right: 692px;
-    }
-  }
-
-  
 
   .header-lang{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 25.5px;
+    line-height: 26px;
     display: flex;
     align-items: center;
     margin-right: 15px;
@@ -148,12 +133,12 @@ img {
 @media screen and (min-width:768px) {
     .header-lang {
      font-size: 17px;
-     margin-right: 0;
     }
   }
 
   span{
     font-weight: 600;
+    font-size: 12px;
   }
 
   .header-button{
@@ -169,11 +154,10 @@ img {
     font-size: 14px;
     line-height: 150%;
     text-align: center;
-    width: 90px;
-    height: 46px;
+    padding: 8px;
     border-radius: 10px;
     border: none;
-    margin-right: 17px;
+    margin-right: 10px;
     -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
     transition: background-color 2s, transform 2s;
   }
@@ -181,9 +165,8 @@ img {
  
   @media screen and (min-width:768px) {
     .btn-register {
-      width: 150px;
-      height: 46px;
       font-size: 20px;
+      padding: 8px 16px;
     }
   }
 
@@ -195,8 +178,7 @@ img {
   font-size: 14px;
   line-height: 150%;
   text-align: center;
-    width: 80px;
-    height: 46px;
+  padding: 8px;
     border-radius: 10px;
     border: 2px solid #0177F9;
     -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
@@ -205,8 +187,7 @@ img {
 
   @media screen and (min-width:768px) {
     .btn-log {
-      width: 122px;
-      height: 46px;
+     padding: 8px 16px;
       font-size: 20px;
     }
   }
@@ -354,7 +335,7 @@ border: none;
 
 @media screen and (min-width:1280px) {
   .hero-img {
-   width: 660px;
+   width: 650px;
   height: 501px;
   }
 }
@@ -363,21 +344,16 @@ border: none;
 .hero-right-subscription{
   position: relative;
   top: -50px;
-  right: -12px;
-  max-width: 400px;
-  height: 116px;
+ margin: 0 auto;
+ padding: 27px 8px;
   background: #FFFFFF;
 box-shadow: 0px 4px 12px rgba(55, 55, 55, 0.25);
 border-radius: 10px;
-padding: 27px 16px;
 }
 
   @media screen and (min-width:1280px) {
     .hero-right-subscription {
-      max-width: 516px;
-      height: 116px;
-      top: -50px;
-      right: -72px;
+      padding: 27px 16px;
     }
   }
 
