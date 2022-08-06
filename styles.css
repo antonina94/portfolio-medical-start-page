@@ -10,7 +10,7 @@ p {
 }
 
 body {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: black;
   font-size: 14px;
   font-style: normal;
@@ -20,7 +20,7 @@ body {
 }
 
 ul {
-  margin: 0;   
+  margin: 0;
   padding: 0;
 }
 
@@ -84,7 +84,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 @media screen and (max-width: 479px) {
@@ -184,10 +184,6 @@ img {
 .btn-register:hover {
   background-color: #0177f9;
   color: white;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: -webkit-transform 1s;
-  transition: transform 1s;
 }
 
 .btn-register:hover {
@@ -251,7 +247,6 @@ img {
   font-size: 36px;
   margin-bottom: 20px;
   line-height: 1.2;
-  width: 90%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -263,8 +258,14 @@ img {
 .hero-text {
   font-size: 17px;
   color: #232323;
-  margin-bottom: 52px;
-  width: 90%;
+  margin-bottom: 32px;
+  text-align: baseline;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    margin-bottom: 52px;
+  }
 }
 
 .btn-apply {
@@ -275,6 +276,7 @@ img {
   align-items: center;
   margin: 0 auto;
   padding: 16px 32px;
+  font-size: 17px;
   background: #0177f9;
   border-radius: 10px;
   color: white;
@@ -318,12 +320,18 @@ img {
 .hero-right-subscription {
   position: relative;
   width: 75%;
-  top: -50px;
+  top: -12%;
   margin: 0 auto;
   padding: 20px 8px;
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(55, 55, 55, 0.25);
   border-radius: 10px;
+}
+
+@media screen and (max-width: 479px) {
+  .hero-right-subscription {
+    padding: 4px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -339,6 +347,12 @@ img {
   color: #a1a1a1;
 }
 
+@media screen and (max-width: 479px) {
+  .subscription-list {
+    font-size: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscription-list {
     font-size: 17px;
@@ -349,6 +363,12 @@ img {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 479px) {
+  .hero-item:not(:last-child) {
+    margin-right: 3px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero-item:not(:last-child) {
     margin-right: 28px;
@@ -356,11 +376,16 @@ img {
 }
 
 .hero-span {
-  display: inline-block;
   margin-bottom: 4px;
   font-weight: 600;
   font-size: 20px;
   color: #0177f9;
+}
+
+@media screen and (max-width: 479px) {
+  .hero-span {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -402,10 +427,18 @@ img {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .work-container-left {
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .work-container-right {
     margin-left: 5%;
+    min-width: 50%;
+    max-width: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -416,17 +449,10 @@ img {
 }
 
 .work-img {
-  border-radius: 50px;
-  width: 75%;
+  border-radius: 20%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .work-img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -519,6 +545,10 @@ img {
 .work-icon:hover {
   fill: #0177f9;
   stroke: #e5f6fe;
+}
+
+.work-item-text {
+  text-align: left;
 }
 
 /* ////////////////////////////////////////////about//////////////////////////////// */
@@ -688,9 +718,16 @@ img {
 }
 
 .partners-img {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 50px;
+  max-height: 50px;
   margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .partners-img {
+    max-width: 90px;
+    max-height: 90px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -724,8 +761,6 @@ img {
 }
 
 .location-cont-left {
-  min-width: 50%;
-  max-width: 50%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -735,9 +770,16 @@ img {
   padding-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .location-cont-left {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .location-cont-left {
-    min-width: auto;
+    width: auto;
   }
 }
 
@@ -960,7 +1002,7 @@ img {
 
 .footer-signature-text {
   font-weight: 500;
-  font-size: 8px;
+  font-size: 7px;
   color: #a1a1a1;
   opacity: 0.6;
 }
@@ -986,7 +1028,9 @@ img {
 .nav-item:hover,
 .footer-title:hover,
 .social-container:hover,
-.contacts-icon:hover {
+.contacts-icon:hover,
+.btn-log:hover,
+.btn-register:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   -webkit-transition: -webkit-transform 1s;
