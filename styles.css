@@ -46,7 +46,6 @@ img {
   padding-right: 40px;
   padding-left: 40px;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
 
 @media screen and (max-width: 479px) {
@@ -1030,7 +1029,8 @@ img {
 .social-container:hover,
 .contacts-icon:hover,
 .btn-log:hover,
-.btn-register:hover {
+.btn-register:hover,
+.hero-right-subscription:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   -webkit-transition: -webkit-transform 1s;
